@@ -1,0 +1,23 @@
+* {
+  box-sizing : border-box;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.js-search-results {
+ 	padding : 30px;
+}
+
+.js-item {
+	padding : 15px;
+	margin : auto 0;
+	float : left;
+}
+
+.js-image {
+    padding: 5px; /* Some padding */
+    width: 150px; /* Set a small width */ 
+}
+
