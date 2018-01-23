@@ -23,8 +23,10 @@ function renderResult(result) {
 }
 
 function displayYouTubeSearchData(data) {
-  const results = data.items.map((item, index) => renderResult(item));
-  $('.js-search-results').html(results);
+  const results = data.items.map((item) => renderResult(item));
+  const allItems = results.join("\n");
+  const itemCount = `<h3>${data.pageInfo.totalResults} results, ${data.pageInfo.resultsPerPage} per page</h3>`;
+  $('.js-search-results').prop('hidden',false).html(itemCount + allItems);
 }
 
 function watchSubmit() {
