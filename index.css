@@ -6,6 +6,28 @@ body {
   padding-top: 50px;
 }
 
+label {
+	position : relative;
+	font-family : 'Acme', bold, sans-serif;
+	font-size : 24px;
+	padding-left : 15px;
+	top : -40px;
+}
+
+.js-query {
+	position : absolute;
+	left : 20px;
+}
+
+button {
+	position : absolute;
+    left : 200px;
+}
+
+h2 {
+	padding-left : 15px;
+}
+
 .js-search-results {
  	padding : 30px;
 }
@@ -16,8 +38,18 @@ body {
 	float : left;
 }
 
-.js-image {
+.js-image img {
     padding: 5px; /* Some padding */
     width: 150px; /* Set a small width */ 
 }
+
+/* We're setting our own focus outline here
+ because we want to be sure it is visible against
+ our blue background. */
+.js-item img:hover,
+.js-item img:focus,
+.js-search-form input:focus,
+.js-search-form button:focus {
+  outline: 2px dashed #061a51;
+} 
 
